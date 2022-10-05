@@ -41,7 +41,6 @@
 # Libpng configuration and build artifacts
 .deps/
 .dirstamp
-Makefile
 autom4te.cache/
 config.h
 config.h.in~
