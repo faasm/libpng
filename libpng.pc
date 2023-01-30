@@ -1,0 +1,12 @@
+prefix=/usr/local/faasm/llvm-sysroot
+exec_prefix=${prefix}
+libdir=/usr/local/faasm/llvm-sysroot/lib/wasm32-wasi
+includedir=/usr/local/faasm/wasm/llvm-sysroot/include/libpng16
+
+Name: libpng
+Description: Loads and saves PNG files
+Version: 1.6.39
+Requires.private: zlib
+Libs: -L${libdir} -lpng16
+Libs.private: ${Libs}
+Cflags: -I${includedir}
